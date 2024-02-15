@@ -1,6 +1,6 @@
 # Projeto PetShop
 ---
-Este repositório contem os códigos do Projeto de PetShop da Última.School
+Este repositório contém os códigos do Projeto de Pet Shop da Última.School
 
 # Como Executar
 ```sh
