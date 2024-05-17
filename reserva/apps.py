@@ -1,7 +1,6 @@
 from django.apps import AppConfig
 
 
-class BaseConfig(AppConfig):
+class ReservaConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'base'
-    verbose_name = 'Módulo Geral'
+    name = 'reserva'
