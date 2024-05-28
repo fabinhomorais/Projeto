@@ -28,6 +28,6 @@ class ReservaForm(forms.ModelForm):
         quantidade_de_reservas = Reserva.objects.filter(dia=dia).count()
         
         if quantidade_de_reservas >= 4:
-            raise forms.ValidationError('A quantidade máxima de reserva para este data já foi antigida. Seliciona outra data.')
+            raise forms.ValidationError('A quantidade máxima de reserva para esta data já foi atingida. Selicione outra data.')
         
         return dia
