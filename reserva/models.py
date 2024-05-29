@@ -26,8 +26,14 @@ class Reserva(models.Model):
         null=True
     )
 
+    def __str__(self):
+        return f'Nome do Pet: {self.nomeDoPet} - Dia da reserva: {self.dia} - Turno: {self.turno}'
+
 class Petshop(models.Model):
     nome = models.CharField(verbose_name="Nome", max_length=50)
     rua = models.CharField(verbose_name="Rua", max_length=100)
     numero = models.CharField(verbose_name="Número", max_length=10)
     bairro = models.CharField(verbose_name="Bairro", max_length=50)
+
+    def qtd_reservas(self):
+        return self.reservas.count()
